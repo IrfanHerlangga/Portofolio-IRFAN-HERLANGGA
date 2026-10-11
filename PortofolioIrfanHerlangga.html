@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Irfan Putra Herlangga — Senior Store Leader | Retail Operations
+    </title>
+    <meta
+      name="description"
+      content="Portofolio profesional Irfan Putra Herlangga — Senior Store Leader dengan 6+ tahun pengalaman retail, inventory control, visual merchandising, dan team leadership."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      :root {
+        --bg: #0a0f1e;
+        --bg2: #0f172a;
+        --card: #131c33;
+        --card2: #182344;
+        --line: rgba(255, 255, 255, 0.09);
+        --text: #eef2ff;
+        --muted: #9aa7c2;
+        --muted2: #6b7894;
+        --accent: #22c55e;
+        --accent2: #16a34a;
+        --gold: #fbbf24;
+        --blue: #38bdf8;
+        --radius: 20px;
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      ::selection {
+        background: var(--accent);
+        color: #06130b;
+      }
+
+      /* NAV */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        backdrop-filter: blur(16px);
+        background: rgba(10, 15, 30, 0.78);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--accent), #0ea5e9);
+        font-weight: 800;
+        color: #06130b;
+      }
+      .brand small {
+        display: block;
+        font-size: 11px;
+        color: var(--muted);
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+      .nav-links {
+        display: flex;
+        gap: 28px;
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .nav-links a:hover {
+        color: #fff;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 13px 24px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 15px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #06130b;
+        box-shadow: 0 10px 30px rgba(34, 197, 94, 0.35);
+      }
+      .btn-primary:hover {
+        background: #4ade80;
+        transform: translateY(-2px);
+      }
+      .btn-ghost {
+        border-color: var(--line);
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .btn-ghost:hover {
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-2px);
+      }
+      .btn-sm {
+        padding: 10px 18px;
+        font-size: 14px;
+      }
+      .hamburger {
+        display: none;
+        background: none;
+        border: 0;
+        color: #fff;
+        font-size: 22px;
+      }
+
+      /* HERO */
+      .hero {
+        position: relative;
+        padding: 150px 0 70px;
+        background:
+          radial-gradient(
+            800px 400px at 15% 10%,
+            rgba(34, 197, 94, 0.18),
+            transparent 60%
+          ),
+          radial-gradient(
+            700px 400px at 85% 20%,
+            rgba(56, 189, 248, 0.16),
+            transparent 60%
+          ),
+          radial-gradient(
+            600px 500px at 50% 100%,
+            rgba(251, 191, 36, 0.08),
+            transparent 60%
+          ),
+          var(--bg);
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(34, 197, 94, 0.12);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        color: #86efac;
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.2);
+        animation: pulse 1.8s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+        }
+      }
+      .hero h1 {
+        font-size: clamp(38px, 5.2vw, 62px);
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+        font-weight: 800;
+      }
+      .hero h1 span {
+        background: linear-gradient(90deg, #4ade80, #38bdf8, #fbbf24);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero p.lead {
+        color: var(--muted);
+        font-size: 17.5px;
+        margin: 20px 0 18px;
+        max-width: 560px;
+      }
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 18px 0 28px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .hero-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid var(--line);
+        padding: 8px 14px;
+        border-radius: 999px;
+      }
+      .hero-meta i {
+        color: var(--accent);
+      }
+      .hero-cta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-top: 10px;
+      }
+      .stat {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 16px 14px;
+        text-align: center;
+      }
+      .stat b {
+        display: block;
+        font-size: 22px;
+      }
+      .stat small {
+        color: var(--muted);
+        font-size: 12.5px;
+        line-height: 1.4;
+        display: block;
+        margin-top: 4px;
+      }
+
+      /* profile card */
+      .profile-card {
+        background: linear-gradient(180deg, var(--card2), var(--card));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+      .profile-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          400px 200px at 50% 0%,
+          rgba(34, 197, 94, 0.2),
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .profile-top {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        position: relative;
+      }
+      .photo {
+        width: 96px;
+        height: 96px;
+        border-radius: 24px;
+        flex-shrink: 0;
+        background: linear-gradient(135deg, #22c55e, #0ea5e9);
+        display: grid;
+        place-items: center;
+        font-size: 34px;
+        font-weight: 800;
+        color: #06130b;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+      }
+      .profile-top h3 {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      .profile-top p {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .role-pill {
+        display: inline-block;
+        margin-top: 8px;
+        background: #fbbf24;
+        color: #1a1200;
+        font-size: 12px;
+        font-weight: 800;
+        padding: 4px 12px;
+        border-radius: 999px;
+        letter-spacing: 0.3px;
+      }
+      .kpi {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 20px 0;
+      }
+      .kpi div {
+        background: rgba(0, 0, 0, 0.28);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px;
+        text-align: center;
+      }
+      .kpi b {
+        color: #4ade80;
+        font-size: 20px;
+      }
+      .kpi span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 2px;
+      }
+      .contact-list {
+        position: relative;
+        display: grid;
+        gap: 10px;
+        font-size: 14px;
+      }
+      .contact-list a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--line);
+        padding: 11px 14px;
+        border-radius: 12px;
+      }
+      .contact-list a:hover {
+        border-color: var(--accent);
+      }
+      .contact-list i {
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 9px;
+        background: rgba(34, 197, 94, 0.15);
+        color: #4ade80;
+      }
+
+      /* SECTION */
+      section {
+        padding: 78px 0;
+      }
+      .eyebrow {
+        color: var(--accent);
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      h2.title {
+        font-size: clamp(28px, 3.5vw, 40px);
+        letter-spacing: -0.8px;
+        line-height: 1.15;
+        margin-bottom: 12px;
+      }
+      p.sub {
+        color: var(--muted);
+        max-width: 680px;
+        margin-bottom: 36px;
+        font-size: 16px;
+      }
+
+      /* about */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+      }
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.02)
+        );
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 28px;
+      }
+      .card h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card h3 i {
+        color: var(--accent);
+      }
+      .card p,
+      .card li {
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .card ul {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+        margin-top: 6px;
+      }
+      .card li {
+        display: flex;
+        gap: 10px;
+      }
+      .card li i {
+        color: var(--accent);
+        margin-top: 5px;
+      }
+      .highlight {
+        border-color: rgba(34, 197, 94, 0.35);
+        background: linear-gradient(
+          180deg,
+          rgba(34, 197, 94, 0.12),
+          rgba(34, 197, 94, 0.03)
+        );
+      }
+
+      /* timeline */
+      .timeline {
+        position: relative;
+        margin-top: 10px;
+        display: grid;
+        gap: 20px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 23px;
+        top: 10px;
+        bottom: 10px;
+        width: 2px;
+        background: linear-gradient(var(--accent), #38bdf8, transparent);
+      }
+      .job {
+        position: relative;
+        margin-left: 60px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 24px 26px;
+        transition: 0.25s;
+      }
+      .job:hover {
+        transform: translateY(-3px);
+        border-color: rgba(34, 197, 94, 0.4);
+      }
+      .job::before {
+        content: "";
+        position: absolute;
+        left: -46px;
+        top: 26px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.18);
+        border: 3px solid #0a0f1e;
+      }
+      .job.current {
+        border-color: rgba(34, 197, 94, 0.5);
+      }
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+      .job h3 {
+        font-size: 19px;
+      }
+      .job .company {
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 14.5px;
+        margin-top: 2px;
+      }
+      .period {
+        font-size: 12.5px;
+        font-weight: 700;
+        background: rgba(34, 197, 94, 0.14);
+        color: #86efac;
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        padding: 6px 12px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .job ul {
+        list-style: none;
+        display: grid;
+        gap: 9px;
+        margin-top: 12px;
+      }
+      .job li {
+        color: var(--muted);
+        font-size: 14.8px;
+        display: flex;
+        gap: 10px;
+      }
+      .job li i {
+        color: var(--accent);
+        margin-top: 5px;
+        font-size: 12px;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .tags span {
+        font-size: 12px;
+        font-weight: 700;
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid var(--line);
+        padding: 5px 11px;
+        border-radius: 999px;
+        color: #cbd5e1;
+      }
+
+      /* skills */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      .skill-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 24px;
+        transition: 0.25s;
+      }
+      .skill-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(56, 189, 248, 0.4);
+      }
+      .skill-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        margin-bottom: 14px;
+      }
+      .si-green {
+        background: rgba(34, 197, 94, 0.15);
+        color: #4ade80;
+      }
+      .si-blue {
+        background: rgba(56, 189, 248, 0.15);
+        color: #38bdf8;
+      }
+      .si-gold {
+        background: rgba(251, 191, 36, 0.15);
+        color: #fbbf24;
+      }
+      .skill-card h4 {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+      .skill-card p {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+      .bar {
+        background: rgba(255, 255, 255, 0.08);
+        height: 8px;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .bar i {
+        display: block;
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent), #38bdf8);
+        width: 0;
+        transition: width 1.2s ease;
+      }
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 36px;
+      }
+      .tools span {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid var(--line);
+        padding: 9px 16px;
+        border-radius: 999px;
+        font-size: 13.5px;
+        font-weight: 600;
+      }
+      .tools span i {
+        color: var(--accent);
+        margin-right: 8px;
+      }
+
+      /* edu + contact */
+      .two-col {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 20px;
+      }
+      .edu-item {
+        display: flex;
+        gap: 16px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .edu-item:last-child {
+        border: 0;
+      }
+      .edu-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: rgba(251, 191, 36, 0.14);
+        color: var(--gold);
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      .contact-card {
+        background: linear-gradient(135deg, #16a34a, #0ea5e9);
+        border-radius: 22px;
+        padding: 34px;
+        color: #04120a;
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-card::after {
+        content: "";
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 50%;
+        right: -100px;
+        top: -100px;
+      }
+      .contact-card h3 {
+        font-size: 26px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        position: relative;
+        z-index: 1;
+      }
+      .contact-card p {
+        margin: 10px 0 22px;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+        opacity: 0.85;
+      }
+      .contact-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+      }
+      .btn-dark {
+        background: #06130b;
+        color: #fff;
+      }
+      .btn-white {
+        background: #fff;
+        color: #06130b;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 28px 0;
+        color: var(--muted2);
+        font-size: 14px;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 900px) {
+        .hero-grid,
+        .about-grid,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+        .skills-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .nav-links {
+          display: none;
+        }
+        .nav-links.open {
+          display: flex;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          right: 0;
+          background: #0f172a;
+          flex-direction: column;
+          padding: 20px 24px;
+          border-bottom: 1px solid var(--line);
+          gap: 16px;
+        }
+        .hamburger {
+          display: block;
+        }
+        .hero {
+          padding-top: 120px;
+        }
+        .hero-stats {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 560px) {
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+        section {
+          padding: 56px 0;
+        }
+        .nav-cta {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-inner">
+        <a href="#top" class="brand">
+          <div class="avatar">IH</div>
+          <div>IRFAN HERLANGGA<small>Retail Operations Leader</small></div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#tentang">Tentang</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#pendidikan">Pendidikan</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a
+            class="btn btn-primary btn-sm nav-cta"
+            href="https://wa.me/6287810303046"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-whatsapp"></i> Hubungi Saya</a
+          >
+          <button class="hamburger" id="hamburger" aria-label="menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">
+            <span class="dot"></span> Tersedia untuk peluang baru • Tangerang,
+            ID
+          </div>
+          <h1>
+            Senior Store Leader dengan fokus pada
+            <span>profit, efisiensi & tim.</span>
+          </h1>
+          <p class="lead">
+            Saya <b style="color: #fff">Irfan Putra Herlangga</b> — profesional
+            retail dengan 6+ tahun pengalaman, berkembang dari Junior hingga
+            Senior Store Leader di Indomaret. Ahli dalam inventory control,
+            visual merchandising, dan memimpin tim operasional berkinerja
+            tinggi.
+          </p>
+          <div class="hero-meta">
+            <span
+              ><i class="fa-solid fa-location-dot"></i> Cibodas, Tangerang
+              Kota</span
+            >
+            <span><i class="fa-solid fa-briefcase"></i> 6+ Tahun Retail</span>
+            <span><i class="fa-solid fa-star"></i> Audit Score &gt;95%</span>
+          </div>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#kontak"
+              ><i class="fa-solid fa-paper-plane"></i> Ajak Kerja Sama</a
+            >
+            <a class="btn btn-ghost" href="#pengalaman"
+              ><i class="fa-solid fa-arrow-down"></i> Lihat Pengalaman</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <b data-count="7">0</b><small>Tahun Pengalaman Kerja</small>
+            </div>
+            <div class="stat">
+              <b><span data-count="15">0</span>%</b
+              ><small>Pertumbuhan Penjualan</small>
+            </div>
+            <div class="stat">
+              <b><span data-count="95">0</span>%+</b
+              ><small>Skor Audit Toko</small>
+            </div>
+            <div class="stat">
+              <b>0.1%</b><small>Variance Loss Terjaga</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile-card reveal visible">
+          <div class="profile-top">
+            <div class="photo">IH</div>
+            <div>
+              <h3>Irfan Putra Herlangga</h3>
+              <p>Senior Store Leader • Indomaret</p>
+              <span class="role-pill">OPEN TO WORK</span>
+            </div>
+          </div>
+          <div class="kpi">
+            <div><b>5–6 Staff</b><span>Tim dipimpin</span></div>
+            <div><b>8%</b><span>Efisiensi Biaya Operasional</span></div>
+            <div><b>99.8%</b><span>Akurasi (ex-Operator)</span></div>
+            <div><b>20+ Materi</b><span>Desain Marketing</span></div>
+          </div>
+          <div class="contact-list">
+            <a href="mailto:irfanherlangga12@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>
+              irfanherlangga12@gmail.com</a
+            >
+            <a href="tel:+6287810303046"
+              ><i class="fa-solid fa-phone"></i> +62 878-1030-3046</a
+            >
+            <a
+              href="https://www.linkedin.com/in/irfanherlangga25"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-brands fa-linkedin"></i>
+              linkedin.com/in/irfanherlangga25</a
+            >
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="tentang">
+      <div class="container">
+        <div class="eyebrow">01 — Tentang Saya</div>
+        <h2 class="title">
+          Pemimpin toko yang menggabungkan disiplin operasional & naluri
+          komersial.
+        </h2>
+        <p class="sub">
+          Berorientasi pada target penjualan, standar layanan pelanggan, dan
+          kelayakan audit tertinggi. Terbiasa mengelola toko dengan volume
+          tinggi dan tekanan target.
+        </p>
+        <div class="about-grid">
+          <div class="card highlight reveal">
+            <h3><i class="fa-solid fa-compass"></i> Ringkasan Profesional</h3>
+            <p>
+              Profesional berdedikasi tinggi di industri retail dan operasional
+              toko selama lebih dari 6 tahun dengan rekam jejak sukses dari
+              posisi Junior hingga dipromosikan menjadi
+              <b style="color: #fff">Senior Store Leader</b>. Memiliki keahlian
+              mendalam dalam manajemen tim operasional, koordinasi visual
+              merchandising, serta pengendalian inventaris (FIFO/FEFO) untuk
+              menekan kerugian dan mendongkrak profitabilitas toko.
+            </p>
+          </div>
+          <div class="card reveal">
+            <h3>
+              <i class="fa-solid fa-trophy"></i> Yang Saya Bawa ke Perusahaan
+            </h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i> Menjaga variance / kehilangan
+                barang di bawah 0.1% (target maksimal perusahaan)
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Mempertahankan skor audit
+                kelayakan toko di atas 95% secara konsisten
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Mendorong volume penjualan
+                naik 12–15% via display strategis & analisis tren lokal
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i> Efisiensi anggaran operasional
+                bulanan hingga 8%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="pengalaman"
+      style="
+        background: var(--bg2);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      "
+    >
+      <div class="container">
+        <div class="eyebrow">02 — Pengalaman Kerja</div>
+        <h2 class="title">7 tahun lintas retail, manufaktur & kreatif.</h2>
+        <p class="sub">
+          Perjalanan karier dari intern desain grafis, operator produksi
+          presisi, hingga memimpin operasional toko retail modern.
+        </p>
+
+        <div class="timeline">
+          <article class="job current reveal">
+            <div class="job-head">
+              <div>
+                <h3>Senior Store Leader</h3>
+                <div class="company">PT. Indomarco Prismatama (INDOMARET)</div>
+              </div>
+              <span class="period">Apr 2019 — Mar 2026 • 7 Tahun</span>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle"></i> Memimpin, mengoordinasikan,
+                dan mengevaluasi operasional harian toko bersama tim 5–6 staf
+                demi konsistensi layanan standar perusahaan.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Mengelola ketersediaan stok &
+                inventory control, meminimalkan variance di bawah target 0.1%.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Mengawasi kualitas produk,
+                planogram, display & visual merchandising — skor audit &gt;95%.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Menyusun laporan operasional,
+                analisis laba-rugi, dan mengontrol anggaran dengan efisiensi 8%.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Meningkatkan penjualan 12–15%
+                melalui penataan produk strategis, manajemen promosi & analisis
+                tren belanja lokal.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Store Operations</span><span>Team Leadership</span
+              ><span>Inventory Control</span><span>Planogram</span
+              ><span>Sales Analysis</span><span>Budgeting</span>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3>Operator Cutting</h3>
+                <div class="company">PT. Dinamika Panasia</div>
+              </div>
+              <span class="period">Jun 2018 — Feb 2019</span>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle"></i> Mengoperasikan mesin cutting
+                industrial sesuai SOP dengan akurasi 99.8%.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Menekan material waste hingga
+                5% melalui QC ketat & pemeliharaan preventif.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Menjaga kebersihan dan
+                keselamatan kerja (K3) di area produksi.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>SOP Compliance</span><span>Quality Control</span
+              ><span>K3</span>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <div class="job-head">
+              <div>
+                <h3>Graphic Design (Internship)</h3>
+                <div class="company">Hotel Mercure Serpong Alam Sutera</div>
+              </div>
+              <span class="period">Des 2016 — Mar 2017</span>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-circle"></i> Membuat 20+ materi desain
+                promosi digital & cetak untuk kampanye marketing dan event
+                hotel.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Mengadaptasi visual sesuai
+                brand identity Mercure kelas internasional.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle"></i> Berkolaborasi dengan tim
+                marketing untuk konsep visual brosur, menu, sosmed & banner.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Brand Identity</span><span>Marketing Collateral</span
+              ><span>Social Media</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="keahlian">
+      <div class="container">
+        <div class="eyebrow">03 — Keahlian</div>
+        <h2 class="title">Skill operasional + administrasi yang siap pakai.</h2>
+        <p class="sub">
+          Kombinasi langka: leadership lapangan yang kuat, disiplin stok, dan
+          kemampuan administrasi/data yang rapi.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon si-green">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h4>Operasional Retail</h4>
+            <p>
+              Store Operations, Stock Management, Product Display & Planogram
+              Compliance.
+            </p>
+            <div class="bar"><i data-w="95"></i></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon si-blue">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <h4>Leadership & Sales</h4>
+            <p>
+              Strategic Leadership, Team Management, Sales & Profit Analysis,
+              Problem Solving.
+            </p>
+            <div class="bar"><i data-w="92"></i></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon si-gold">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <h4>Inventory Excellence</h4>
+            <p>
+              Inventory Control, FIFO & FEFO Systems, Budgeting Control, Time
+              Management.
+            </p>
+            <div class="bar"><i data-w="96"></i></div>
+          </div>
+        </div>
+        <div class="tools reveal">
+          <span><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+          <span><i class="fa-solid fa-file-word"></i> Microsoft Word</span>
+          <span><i class="fa-solid fa-cash-register"></i> POS Systems</span>
+          <span
+            ><i class="fa-solid fa-chart-line"></i> Reporting & Data Entry</span
+          >
+          <span
+            ><i class="fa-solid fa-handshake"></i> Customer Service
+            Excellence</span
+          >
+          <span><i class="fa-solid fa-palette"></i> Basic Graphic Design</span>
+          <span><i class="fa-solid fa-comments"></i> Communication Skills</span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="pendidikan"
+      style="background: var(--bg2); border-top: 1px solid var(--line)"
+    >
+      <div class="container">
+        <div class="eyebrow">04 — Pendidikan & Kontak</div>
+        <h2 class="title">Mari terhubung.</h2>
+        <div class="two-col" style="margin-top: 28px">
+          <div class="card reveal">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fa-solid fa-computer"></i></div>
+              <div>
+                <b>SMK PGRI 109 — Teknik Komputer dan Jaringan</b>
+                <p style="font-size: 14px">Feb 2015 — Mei 2018</p>
+                <p style="font-size: 13.5px; margin-top: 6px">
+                  Fondasi IT, troubleshooting, dan administrasi sistem —
+                  menunjang kemampuan reporting & POS.
+                </p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div
+                class="edu-icon"
+                style="background: rgba(56, 189, 248, 0.14); color: #38bdf8"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <b>Domisili & Ketersediaan</b>
+                <p style="font-size: 14px">
+                  Cibodas, Tangerang Kota — Bersedia onsite / shift / penempatan
+                  Jabodetabek
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card reveal" id="kontak">
+            <h3>
+              Butuh Store Leader yang bisa menaikkan omzet sekaligus menekan
+              loss?
+            </h3>
+            <p>
+              Respons cepat via WhatsApp / Email. CV lengkap tersedia dalam
+              format PDF.
+            </p>
+            <div class="contact-actions">
+              <a
+                class="btn btn-dark"
+                href="https://wa.me/6287810303046?text=Halo%20Irfan%2C%20saya%20tertarik%20dengan%20profil%20Anda."
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-whatsapp"></i> +62 878-1030-3046</a
+              >
+              <a class="btn btn-white" href="mailto:irfanherlangga12@gmail.com"
+                ><i class="fa-solid fa-envelope"></i> Email Saya</a
+              >
+              <a
+                class="btn btn-ghost"
+                style="border-color: rgba(0, 0, 0, 0.25); color: #06130b"
+                href="https://www.linkedin.com/in/irfanherlangga25"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <span>© 2026 Irfan Putra Herlangga • Cibodas, Tangerang</span>
+        <span>Dibuat dengan fokus pada performa, kerapian & hasil.</span>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("navLinks");
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", () => nav.classList.toggle("open"));
+      nav
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => nav.classList.remove("open")),
+        );
+
+      // reveal on scroll
+      const io = new IntersectionObserver(
+        (es) => {
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              e.target
+                .querySelectorAll(".bar i")
+                .forEach((b) => (b.style.width = b.dataset.w + "%"));
+              // counters inside
+              e.target.querySelectorAll("[data-count]").forEach((el) => {
+                if (el.dataset.done) return;
+                el.dataset.done = 1;
+                const target = +el.dataset.count;
+                let cur = 0;
+                const step = Math.max(1, Math.round(target / 40));
+                const t = setInterval(() => {
+                  cur += step;
+                  if (cur >= target) {
+                    cur = target;
+                    clearInterval(t);
+                  }
+                  el.textContent = cur;
+                }, 40);
+              });
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      document
+        .querySelectorAll(".reveal, .hero-stats, .skill-card")
+        .forEach((el) => io.observe(el));
+      // hero counters immediately
+      document.querySelectorAll(".hero-stats [data-count]").forEach((el) => {
+        const target = +el.dataset.count;
+        let cur = 0;
+        const step = Math.max(1, Math.round(target / 50));
+        const t = setInterval(() => {
+          cur += step;
+          if (cur >= target) {
+            cur = target;
+            clearInterval(t);
+          }
+          el.textContent = cur;
+        }, 35);
+      });
+      document
+        .querySelectorAll(".bar i")
+        .forEach((b) =>
+          setTimeout(() => (b.style.width = b.dataset.w + "%"), 600),
+        );
+    </script>
+  </body>
+</html>
